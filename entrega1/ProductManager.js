@@ -45,7 +45,7 @@ class ProductManager {
                 }else{
                     product.id = this.products[this.products.length - 1].id +1;
                 }
-                this.products.push([...this.products, product]);
+                this.products.push(product);
             }else{
                 console.log("El código de producto ya ha sido registrado");
                 return;
@@ -58,5 +58,7 @@ const manejadorProducts = new ProductManager();
 
 manejadorProducts.addProducts('producto prueba', 'este es un producto de prueba', 200, 'sin imagen', 'abc123', 25);
 manejadorProducts.addProducts('producto 1', 'producto 1', 500, 'sin imagen', 'abc124', 30);
+manejadorProducts.addProducts('producto 2', 'producto 2', 400, 'sin imagen', 'abc124', 70); //producto con code repetido
 
 console.log(manejadorProducts.getProducts());
+console.log(manejadorProducts.getProductById(3));
