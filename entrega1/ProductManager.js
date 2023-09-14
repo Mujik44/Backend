@@ -61,4 +61,4 @@ manejadorProducts.addProducts('producto 1', 'producto 1', 500, 'sin imagen', 'ab
 manejadorProducts.addProducts('producto 2', 'producto 2', 400, 'sin imagen', 'abc124', 70); //producto con code repetido
 
 console.log(manejadorProducts.getProducts());
-console.log(manejadorProducts.getProductById(3));
+console.log(manejadorProducts.getProductById(3)); //busca id 3 el cual no existe 
